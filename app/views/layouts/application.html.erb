@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
     <title><%= yield(:page_title) %> | Bootstrap1</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%=render 'layouts/navbar'%><!-- ________important________ -->
     <!-- beginning of styling :') ___  -->
-    <!-- fikdik.atom: .div$tab -->
     <!-- moral da história: tu trata as classes do ruby como parâmetros das divs lol -->
-    <div class="container" <%=controller_name%> <%=action_name%>  >
+    <!-- fikdik.atom: .div$tab -->
+    <div class="container" <%=controller_name%> <%=action_name%>"">
       <%= yield %>
     </div>
   </body>

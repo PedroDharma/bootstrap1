@@ -26,7 +26,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
-gem 'bootstrap'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 
 gem 'friendly_id'
 
